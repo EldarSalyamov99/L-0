@@ -1,4 +1,59 @@
-.test{
-    color: brown;
-    
+.header {
+  background-color: #6725A8;
+  height: 112px;
+  color: #fff;
+  position: relative;
+  gap: 10px;
 }
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  gap: 15px;
+}
+
+.header__burger{
+    width: 48px;
+    height: 48px;
+    border: 1px solid #FFFFFF73;
+    border-radius: 8px;
+}
+
+.header__burger-img {
+    background-image: url(../images/burger.svg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__logo {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: 110px;
+}
+.half-space {
+    letter-spacing: 2px;
+}
+
+.header__bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 24px;
+  background-color: white;
+  border-radius: 24px 24px 0 0;
+}
+
+
+

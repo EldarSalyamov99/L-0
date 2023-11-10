@@ -6,7 +6,41 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Vite App</title>
   </head>
-  <body>  
-    <h1 class="test">Vite App</h1>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <!-- логотип с текстом -->
+        <div class="header__logo-wrapper">
+          <div class="header__burger">
+            <div class="header__burger-img"></div>
+          </div>
+          <a href="/" class="header__logo">ТОВАРЫ  <span class="half-space">И ТОЧКА</span></a>
+        </div>
+        <!-- поиск  -->
+        <div class="header__search searcher">
+          <input type="text" placeholder="Я ищу..." class="searcher__input">
+          <button type="button" class="searcher__btn"></button>
+        </div>
+        <!-- навигация -->
+        <nav class="header__navbar navbar">
+          <ul class="navbar__ul">
+            <li class="navbar__list">
+              <a href="#" class="navbar__link">
+                <span class="navbar__icon navbar__icon_profile"></span>
+                Профиль
+              </a>
+            </li>
+            <li class="navbar__list">
+              <a href="#" class="navbar__link">
+                <span class="navbar__icon navbar__icon_cart"></span>
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__bottom">
+      </div>
+    </header>
   </body>
 </html>
