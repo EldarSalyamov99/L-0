@@ -1,0 +1,50 @@
+.tooltip {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip__text-box {
+  position: absolute;
+  visibility: hidden;
+  padding: 5px 0;
+  z-index: 5;
+  opacity: 0;
+  top: 90%;
+  right: 2px;
+  margin-left: -60px;
+  /* overflow-x: hidden; */
+  /* width: auto;  */
+  /* white-space: normal; */
+}
+.tooltip__text-box__sale{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  right: 1px;
+  
+  /* padding-left: 100px; */
+
+}
+
+.tooltip:hover:hover .tooltip__text-box__sale{
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltip__text {
+  box-shadow: 0 0 4px 0px rgba(0,0,0,.3);
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 11px 16px 13px 16px;
+  /* display: block; */
+}
+
+.tooltip:hover .tooltip__text-box {
+  visibility: visible;
+  opacity: 1;
+}
+#besitt {
+  margin-right: 200px;
+}

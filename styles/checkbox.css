@@ -1,0 +1,38 @@
+.checkbox {
+  display: block;
+  position: relative;
+  padding: 0 0 0 33px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox__checkmark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 6px;
+  width: 22px;
+  height: 22px;
+  transition: all 0.3s;
+  background-image: url('.../../img/images/checkbox-empty.svg');
+}
+
+.checkbox:hover .checkbox__input ~ .checkbox__checkmark {
+  opacity: 0.5;
+}
+
+.checkbox .checkbox__input:checked ~ .checkbox__checkmark {
+  background-image: url('../../img/images/checkbox.svg');
+}

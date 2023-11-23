@@ -1,0 +1,26 @@
+@import url(SegoeUI.css);
+@import url(header.css);
+@import url(cartDelivery.css);
+@import url(cartForm.css);
+@import url(cartPayment.css);
+@import url(checkbox.css);
+@import url(counter.css);
+@import url(footer.css);
+@import url(formDelivery.css);
+@import url(formPayment.css);
+@import url(main.css);
+@import url(order.css);
+@import url(page.css);
+@import url(popup.css);
+@import url(productCard.css);
+@import url(products.css);
+@import url(radioBtn.css);
+@import url(tooltip.css);
+@import url(user.css);
+@import url(mobNav.css);
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

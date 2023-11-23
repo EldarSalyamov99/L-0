@@ -1,0 +1,25 @@
+:root {
+  --max-width: 1400px;
+  --page-padding: 0 24px;
+  --phone-page-padding: 0 16px;
+  --violet: #6725A8;
+  --orange: #F55123;
+  --pink: #CB11AB;
+  --grey: #9797AF;
+  --smoky: #F6F6FA;
+}
+
+.page {
+  font-family: SegoeUI, Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.body_unscrolled {
+  overflow-y: hidden;
+}
+
+@media (min-width: 768px) {
+  .page_scrolled {
+    padding-right: 17px;
+  }
+}

@@ -1,0 +1,45 @@
+.form-payment__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 139px;
+}
+
+.form-payment__card-wrapper {
+  margin-bottom: 16px;
+}
+
+.form-payment__card-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-payment__icon-box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 32px;
+  height: 24px;
+  background-color: var(--smoky);
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.form-payment__radio-btn {
+  display: flex;
+  padding: 0 0 0 28px;
+}
+
+.form-payment__card-data {
+  display: flex;
+}
+
+.form-payment__checkmark {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 500px) {
+  .form-payment__list {
+    padding: 0 2px;
+  }
+}
