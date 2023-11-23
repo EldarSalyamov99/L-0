@@ -147,14 +147,15 @@
   height: 24px;
   background-color: white;
   border-radius: 24px 24px 0 0;
+  
 }
 
 @media (max-width: 768px) {
   .header{
-    height: 56px;
+    height: 81px;
   }
   .header__bottom{
-    height: 20px;
+    height: 25px;
   }
   .navigation {
     display: none;
@@ -162,19 +163,31 @@
   .search__input {
     display: none;
   }
+ 
   .search__button {
-    display: none;
+    background-image: url(../img/header/search-mobile.svg);
+    padding: 0;
+    cursor: pointer;
+    bottom: 0.2px;
+  }
+  .header__burger-img{
+    background-image: url(../img/header/burger-mobile.svg);
+    cursor: pointer;
+  }
+  .header__burger {
+    border: none;
+  }
+
+  .header__logo-wrapper {
+    padding-left: 4px;
+    gap: 10px;
   }
   .header__logo {
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    height: 1.4rem;
+    padding: 14px 0 18px;
+    white-space: nowrap;
   }
-  .header__logo::after{
-    content: ' ИТОЧКА';
-  }
-  .half-space {
-    display: none;
-  }
+  
+
 }

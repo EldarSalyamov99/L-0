@@ -1,0 +1,94 @@
+.counter {
+  height: 44px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.counter__btn {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  /* transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.counter__btn:hover {
+  background-color: var(--smoky);
+  border-radius: 5px;
+}
+
+.counter__btn_inactive {
+  opacity: 0.2;
+  cursor: auto;
+}
+
+.counter__btn_minus {
+  background-image: url('../../img/images/minus.svg');
+  margin-top: -1px;
+}
+
+.counter__btn_plus {
+  background-image: url('../../img/images/plus.svg');
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
+.counter__input {
+  font-size: 16px;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  width: 44px;
+  height: 23px;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 0;
+  background: transparent;
+  margin-bottom: 4px;
+}
+
+.counter__input::-webkit-outer-spin-button,
+.counter__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.counter__input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 580px) {
+  .counter {
+    width: 80px;
+    height: 32px
+  }
+
+  .counter__btn {
+    height: 100%;
+    width: 24px;
+    padding: 0;
+  }
+
+  .counter__input {
+    width: 32px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .counter__btn_plus {
+    background-position: 36%;
+  }
+
+  .counter__btn_minus {
+    background-position: 60%;
+  }
+
+}

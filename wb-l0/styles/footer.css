@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+  background-color: var(--violet);
+  padding: 48px 0 24px;
+}
+
+.footer::before {
+  background-color: var(--smoky);
+  border-radius: 0 0 24px 24px;
+  top: -1px;
+  content: "";
+  display: block;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.footer__text {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 13px;
+  line-height: 16px;
+  word-wrap: break-word;
+  padding: var(--page-padding);
+  text-align: center;
+  margin: 0;
+  max-width: var(--max-width);
+  margin-top: -1px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-bottom: 56px;
+  }
+}
