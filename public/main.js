@@ -1,17 +1,17 @@
 import './styles/style.css';
-import Product from './components/Product.js'
-import ProductList from './components/ProductList.js'
-import DeliveryPopup from './components/DeliveryPopup';
-import AddressList from './components/AddressList';
-import DeliveryDates from './components/DeliveryDates';
-import PaymentPopup from './components/PaymentPopup';
-import { FormValidator } from './components/FormValidator';
-import { products, missingProducts, addressesData, pickupAddressesData, deliveryDates, bankCards, companyData } from './utils/data';
+import Product from '../components/Product.js'
+import ProductList from '../components/ProductList.js'
+import DeliveryPopup from '../components/DeliveryPopup';
+import AddressList from '../components/AddressList';
+import DeliveryDates from '../components/DeliveryDates';
+import PaymentPopup from '../components/PaymentPopup';
+import { FormValidator } from '../components/FormValidator';
+import { products, missingProducts, addressesData, pickupAddressesData, deliveryDates, bankCards, companyData } from '../utils/data';
 import {
   productsContainer, missingProductsContainer, deliveryPopupSelector, courierAddressBox, pickupAddressBox,
   deliveryContainer, paymentChangeBtns, paymentPopupSelector, cardsContainerSelector, cartFormElement,
   cartFormElements, inputErrros, addressChangeBtn, scrollButton, targetElement
-} from './utils/utils';
+} from '../utils/utils';
 
 //products in cart
 const productArray = [];
