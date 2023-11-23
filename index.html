@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="/main.js"></script>
     <link rel="stylesheet" href="styles/style.css">
     <title>ТОВАРЫ И ТОЧКА</title>
   </head>
@@ -63,8 +62,8 @@
               <ul class="products__list">
                   <template id="productTemplate">
                     <li class="products__card product-card">
-                        <div class="product-card__img-box">
-                          <label class="product-card__checkbox checkbox">
+                      <div class="product-card__img-box">
+                        <label class="product-card__checkbox checkbox">
                             <input type="checkbox" class="checkbox__input product-card__checkbox-input" checked>
                             <span class="checkbox__checkmark"></span>
                           </label>
@@ -132,21 +131,21 @@
               </div>
               <div class="cart-form__products products" id="products-missing">
                 <div class="products__heading">
-                <p class="products__accordion-summary products__accordion-summary-missing">
-                  <span class="products__accordion-amount products__accordion-amount-missing"></span>
-                </p>
-                <button type="button" class="products__accordion-icon">
-                  <span></span>
-                </button>
+                  <p class="products__accordion-summary products__accordion-summary-missing">
+                    <span class="products__accordion-amount products__accordion-amount-missing"></span>
+                  </p>
+                  <button type="button" class="products__accordion-icon">
+                    <span></span>
+                  </button>
               </div>
               <ul class="products__list products__list_missing">
                 <template id="missingProductTemplate">
                   <li class="products__card product-card">
-                      <div class="product-card__img-box product-card__img-box_missing">
-                        <img
-                          class="product-card__img product-card__img_grey"
-                        >
-                        <span class="product-card__size"></span>
+                    <div class="product-card__img-box product-card__img-box_missing">
+                      <img
+                      class="product-card__img product-card__img_grey"
+                      >
+                      <span class="product-card__size"></span>
                       </div>
                       
                       <!-- product description -->
@@ -156,16 +155,16 @@
                         </a>
                         <div class="product-card__properties"></div>
                       </div>
-                    <!-- </div> -->
-
-                    <!-- action btns -->
+                      <!-- </div> -->
+                      
+                      <!-- action btns -->
                     <div class="product-card__counter-wrapper">
                       <div class="product-card__btn-box">
                         <button type="button" class="product-card__actn-btn product-card__actn-btn-like"></button>
                         <button type="button" class="product-card__actn-btn product-card__actn-btn-delete"></button>
                       </div>
                     </div>
-
+                    
                     <div class="product-card__sum-container">
                     </div>
                     
@@ -178,7 +177,7 @@
           
           <!-- delivery data -->
           <div class="cart-form__card-wrapper cart-delivery">
-
+            
             <div class="cart-form__card-header-box">
               <h3 class="cart-form__card-header">Способ доставки</h3>
               <button class="cart-form__card-btn edit-address" type="button">Изменить</button>
@@ -206,7 +205,7 @@
               </div>
               
               <div div class="cart-delivery__container">
-
+                
                 <!-- delivery date row -->
                 <template id="delivery-date-template">
                   <div class="cart-delivery__row">
@@ -227,11 +226,11 @@
                     </div>
                   </li>
                 </template>
-
+                
               </div>
               
             </div>
-
+            
             <div class="cart-delivery__return">
               <span class="cart-delivery__check-icon"></span>
               <div class="cart-delivery__paragr">
@@ -247,7 +246,7 @@
             </div>
             
           </div>
-
+          
           <!-- payment data -->
           <div class="cart-form__card-wrapper cart-payment">
             <div class="cart-form__card-header-box">
@@ -273,7 +272,7 @@
             </div>
             
             <div class="user__data">
-
+              
               <div class="user__input-container user__input-container_username">
                 <input class="user__input" type="text" id="username" name="username">
                 <label class="user__label" for="username">Имя</label>
@@ -297,7 +296,7 @@
                 <label class="user__label" for="phone">Телефон</label>
                 <span class="user__input-error">Заполните поле</span>
               </div>
-
+              
               <div class="user__input-container user__input-container_inn">
                 <input class="user__input" type="text" id="inn" name="inn" maxlength="14">
                 <label class="user__label" for="inn">ИНН</label>
@@ -308,7 +307,7 @@
             </div>
             
           </div>
-
+          
         </div>
         
         <!-- cart order -->
@@ -345,14 +344,14 @@
                     <span class="order__sum">Доставка</span>
                     <span class="order__sum order__sum-value">Бесплатно</span>
                   </div>
-
-              </div>
-
-              <!-- delivery data -->
-              <div class="order__element order__delivery">
-                <div class="order__delivery-data">
-                  <div class="order__element-heading">
-                    <span class="order__heading">Доставка в пункт выдачи</span>
+                  
+                </div>
+                
+                <!-- delivery data -->
+                <div class="order__element order__delivery">
+                  <div class="order__delivery-data">
+                    <div class="order__element-heading">
+                      <span class="order__heading">Доставка в пункт выдачи</span>
                     <span class="order__edit edit-address"></span>
                   </div>
                   <p class="order__paragr order__selected-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
@@ -414,7 +413,7 @@
               </div>
               
             </div>
-
+            
           </div>
         </div>
         
@@ -468,7 +467,7 @@
             </div>
             <div class="form-delivery__adress-box form-delivery__adress-box-pickup"></div>
           </div>
-
+          
           <!-- submit btn container -->
           <div class="popup__sbt-btn-wrapper">
             <button class="popup__sbt-btn" type="submit">Выбрать</button>
@@ -488,7 +487,7 @@
           <h2 class="popup__heading">Способ оплаты</h2>
           <button class="popup__close-btn" type="button"></button>
         </div>
-
+        
         <!-- delivery form -->
         <form class="popup__form form-payment" novalidate>
           
@@ -527,7 +526,7 @@
     <footer class="footer">
       <p class="footer__text">&copy; 2022&nbsp;&nbsp;ООО «Товары и точка»</p>
     </footer>
-
+    
     <nav class="mob-nav">
       <ul class="mob-nav__ul">
         <li class="mob-nav__li"><a class="mob-nav__link mob-nav__link-home" href="#"></a></li>
@@ -542,7 +541,8 @@
         <li class="mob-nav__li"><a class="mob-nav__link mob-nav__link-profile" href="#"></a></li>
       </ul>
     </nav>
-
+    
   </body>
+  <script type="module" src="/main.js"></script>
   </html>
   
