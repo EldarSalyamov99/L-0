@@ -1,6 +1,7 @@
 {
   "name": "wb-l0",
-  "private": true,
+  "private": false,
+  "homepage": "https://eldarsalyamov99.github.io/L-0/",
   "version": "0.0.0",
   "type": "module",
   "main": "main.js",
