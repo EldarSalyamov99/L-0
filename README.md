@@ -15,4 +15,4 @@ JavaScript
 4. Запуск npm run dev
 
 # Демо
-https://eldarsalyamov99.github.io/L-0/
+https://eldarsalyamov99.github.io/
